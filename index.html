@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La De Route</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+<body">
+  <!-- Top Banner -->
+  <section role="banner">
+    <span class="w-full bg-red-500 h-2 block"></span>
+    <div class="text-white text-center text-base bg-[#002D84] justify-center items-center block py-4 w-full">
+      <p class="font-semibold">
+        ENVIO e devolução grátis nos móveis
+      </p>
+    </div>
+  </section>
+  <!-- Navbar -->
+  <header
+    class="border-b border-neutral-200 xl:flex xl:items-center xl:justify-center xl:gap-10 xl:py-4 full-container-xl">
+    <img src="/logo.svg" alt="TODO: ADD ALT" class="h-full hidden xl:block" />
+    <div class="w-full flex flex-col xl:flex-row-reverse xl:gap-5">
+      <!-- Navbar Top -->
+      <div class="flex items-center justify-center full-container xl:w-fit xl:m-0 xl:h-14 xl:p-0">
+        <div class="flex items-center justify-start w-full xl:hidden">
+          <button aria-label="Abrir Menu" class="h-full relative flex items-center justify-start w-12">
+            <img src="/hamburguer.svg" alt="TODO: ADD ALT" class="h-5 w-full" />
+          </button>
+        </div>
+        <img src="/logo.svg" alt="TODO: ADD ALT" class="h-16 w-auto p-2 xl:hidden" />
+        <div class="flex items-center justify-end w-full xl:gap-2 shrink">
+          <button aria-label="Abrir Menu" class="relative flex items-center justify-start w-14 xl:w-fit xl:gap-3 xl:px-5 py-4 shrink-0 rounded-full h-14 hover:bg-neutral-100 gap-2
+            ">
+            <img src="/user.svg" alt="TODO: ADD ALT" class="h-6 w-full" />
+            <p class="text-neutral-900 text-center text-sm font-semibold shrink-0 hidden xl:block"
+              aria-label="Baixa de preço">Entrar / Registar</p>
+          </button>
+          <div class="flex">
+            <button aria-label="Abrir Menu"
+              class="hidden xl:flex relative items-center justify-center w-14 shrink-0 rounded-full h-14 hover:bg-neutral-100 gap-2">
+              <img src="/favorite.svg" alt="TODO: ADD ALT" class="h-6 w-full" />
+            </button>
+            <button aria-label="Abrir Menu"
+              class="relative items-center justify-center w-14 shrink-0 rounded-full h-14 hover:bg-neutral-100 gap-2">
+              <img src="/cart.svg" alt="TODO: ADD ALT" class="h-6 w-full" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2 py-2 xl:py-0 xl:gap-4 xl:grow">
+        <!-- Navbar Middle -->
+        <div class="flex items-center justify-center full-container xl:p-0">
+          <div class="flex gap-2 items-center bg-neutral-100 rounded-full px-4 py-3 w-full xl:py-0 xl:h-14 xl:px-6">
+            <img src="/search.svg" alt="TODO: ADD ALT" class="w-5" />
+            <input type="text" placeholder="O que procura?" class="text-zinc-900
+        placeholder-zinc-900 text-sm outline-none bg-transparent" />
+          </div>
+        </div>
+
+        <!-- Navbar Bottom -->
+        <div class="flex items-center justify-center full-container-xl full-container-l xl:p-0">
+          <nav class="flex grow justify-start items-center gap-2 flex-row overflow-x-scroll no-scrollbar">
+            <button aria-label="Abrir Menu"
+              class="rounded-full relative items-center justify-start px-5 bg-neutral-900 gap-2 h-10 hidden xl:flex xl:shrink-0">
+              <img src="/hamburguer.svg" alt="TODO: ADD ALT" class="h-4 w-full invert" />
+              <p class="text-white text-center text-sm font-semibold shrink-0 uppercase">Menu</p>
+            </button>
+            <!-- LINK -->
+            <a href="#"
+              class="text-rose-600 text-center text-sm font-semibold py-4 shrink-0 rounded-full relative items-center justify-start px-5 hover:bg-neutral-100 gap-2 h-10 flex xl:shrink-0"
+              aria-label="Baixa de preço">Baixa de preço</a>
+            <!-- LINK -->
+            <a href="#"
+              class="text-neutral-900 text-center text-sm font-semibold py-4 shrink-0 rounded-full relative items-center justify-start px-5 hover:bg-neutral-100 gap-2 h-10 flex xl:shrink-0"
+              aria-label="Baixa de preço">Têxtil-lar</a>
+            <!-- LINK -->
+            <a href="#"
+              class="text-neutral-900 text-center text-sm font-semibold py-4 shrink-0 rounded-full relative items-center justify-start px-5 hover:bg-neutral-100 gap-2 h-10 flex xl:shrink-0"
+              aria-label="Baixa de preço">Mobiliário</a>
+            <!-- LINK -->
+            <a href="#"
+              class="text-neutral-900 text-center text-sm font-semibold py-4 shrink-0 rounded-full relative items-center justify-start px-5 hover:bg-neutral-100 gap-2 h-10 flex xl:shrink-0"
+              aria-label="Baixa de preço">Moda & Calçado</a>
+            <!-- LINK -->
+            <a href="#"
+              class="text-neutral-900 text-center text-sm font-semibold py-4 shrink-0 rounded-full relative items-center justify-start px-5 hover:bg-neutral-100 gap-2 h-10 flex xl:shrink-0"
+              aria-label="Baixa de preço">Outlet</a>
+            <!-- LINK -->
+            <a href="#"
+              class="text-neutral-900 text-center text-sm font-semibold py-4 shrink-0 rounded-full relative items-center justify-start px-5 hover:bg-neutral-100 gap-2 h-10 flex xl:shrink-0"
+              aria-label="Baixa de preço">Business</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Product View -->
+  <section>
+    <div class="flex items-center justify-center w-full">
+      <div class="grid xl:grid-cols-2 grid-cols-1 w-full border-b border-neutral-300">
+        <div class="w-full flex flex-col bg-white relative xl:sticky h-auto xl:h-[calc(100vh_-13.09rem)] top-0">
+          <!-- SLIDER-->
+          <div class="relative h-full embla product-images ">
+            <div class="embla__viewport h-full">
+              <div class="embla__container h-full">
+                <!-- SLIDE -->
+                <div class="embla__slide h-full">
+                  <img src="/movel-01.webp" alt="TODO: ADD ALT" class="h-full  object-contain object-top w-full" />
+                </div>
+                <!-- SLIDE -->
+                <div class="embla__slide h-full">
+                  <img src="/movel-02.webp" alt="TODO: ADD ALT" class="h-full w-full object-contain object-top" />
+                </div>
+                <!-- SLIDE -->
+                <div class="embla__slide h-full">
+                  <img src="/movel-03.webp" alt="TODO: ADD ALT" class="h-full w-full object-contain object-top" />
+                </div>
+                <!-- SLIDE -->
+                <div class="embla__slide h-full">
+                  <img src="/movel-04.webp" alt="TODO: ADD ALT" class="h-full w-full object-contain object-top" />
+                </div>
+                <!-- SLIDE -->
+                <div class="embla__slide h-full">
+                  <img src="/movel-05.webp" alt="TODO: ADD ALT" class="h-full w-full object-cover object-top" />
+                </div>
+                <!-- SLIDE -->
+                <div id="experience" class="embla__slide h-full">
+                </div>
+              </div>
+              <div
+                class="flex gap-3 absolute z-10 right-0 top-1/2 transform -translate-y-1/2 w-full px-4 justify-between">
+                <button
+                  class="embla__prev border bg-white/80 flex items-center justify-center w-12 h-12 rounded-lg border-stone-300">
+                  <img src="/arrow.svg" alt="TODO: ADD ALT" class="h-5 transform rotate-180" />
+                </button>
+                <button
+                  class="embla__next border bg-white/80 flex items-center justify-center w-12 h-12 rounded-lg border-stone-300">
+                  <img src="/arrow.svg" alt="TODO: ADD ALT" class="h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="flex items-center justify-center bg-white/80 w-12 h-12 rounded-lg border border-stone-300 absolute top-4 right-4">
+            <img src="/expand.svg" alt="TODO: ADD ALT" class="h-5 transform rotate-180" />
+          </button>
+          <div id="image_controls"
+            class="w-full gap-y-4 flex-col min-[320px]:flex-row min-[320px]:items-center  items-start justify-between px-4 relative xl:absolute bottom-4 flex">
+            <div class="flex items-center justify-start gap-2">
+              <div class="flex gap-1">
+                <span
+                  class="w-8 h-2.5 flex items-center justify-center rounded-full overflow-hidden bg-neutral-900 border-neutral-900 border-2">
+                </span>
+                <span
+                  class="w-2.5 h-2.5 flex items-center justify-center rounded-full overflow-hidden border-neutral-900 border-2">
+                </span>
+                <span
+                  class="w-2.5 h-2.5 flex items-center justify-center rounded-full overflow-hidden border-neutral-900 border-2">
+                </span>
+                <span
+                  class="w-2.5 h-2.5 flex items-center justify-center rounded-full overflow-hidden border-neutral-900 border-2">
+                </span>
+                <span
+                  class="w-2.5 h-2.5 flex items-center justify-center rounded-full overflow-hidden border-neutral-900 border-2">
+                </span>
+                <span
+                  class="w-2.5 h-2.5 flex items-center justify-center rounded-full overflow-hidden border-neutral-900 border-2">
+                </span>
+              </div>
+            </div>
+            <button
+              class="border bg-white/80 flex w-52 flex-col justify-center  px-2 rounded-lg border-solid border-gray-200">
+              <span class="items-center flex justify-between gap-3 my-1.5">
+                <img src="/finder.svg" alt="logo" class="w-5" />
+                <div class="text-zinc-900 text-sm font-semibold">
+                  Artigos semelhantes
+                </div>
+              </span>
+            </button>
+          </div>
+          <!-- Canvas Materials Control -->
+          <div id="experience_controls" class="gap-2 px-4 py-4 hidden overflow-x-auto no-scrollbar">
+            <button id="front"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-fit font-semibold text-neutral-900 ">
+              Frente
+            </button>
+            <button id="left"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-fit font-semibold text-neutral-900 ">
+              Esquerda
+            </button>
+            <button id="right"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-fit font-semibold text-neutral-900 ">
+              Direita
+            </button>
+            <button id="top"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-fit font-semibold text-neutral-900">
+              Topo
+            </button>
+            <button id="back"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-fit font-semibold text-neutral-900">
+              Trás
+            </button>
+            <button id="defaultMaterial"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-12 shrink-0 font-semibold text-neutral-900 overflow-hidden  relative">
+              <img src="/Wood_dark.png" alt="TODO: ADD ALT" class="w-full h-full absolute left-0 right-0" />
+            </button>
+            <button id="newMaterial"
+              class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-3 rounded-md w-12 shrink-0 font-semibold text-neutral-900 overflow-hidden relative">
+              <img src="/wood_light.png" alt="TODO: ADD ALT" class="w-full h-full absolute left-0 right-0" />
+            </button>
+          </div>
+        </div>
+        <div class="pt-4 pb-8 full-container flex flex-col gap-8 xl:border-neutral-300 xl:border-l">
+          <p class="text-neutral-500 text-xs">
+            La Redoute / Móveis / Sala de Jantar /
+            <span class="font-semibold">Aparadores</span>
+          </p>
+
+          <div class="flex-col flex gap-3.5">
+            <div class="flex flex-col gap-3 text-neutral-900">
+              <p class="text-sm uppercase font-semibold underline">
+                La Redoute Interieurs
+              </p>
+              <p class="text-2xl">
+                Aparador 3 portas, 3 gavetas, NOTTINGHAM
+              </p>
+
+              <details class="flex flex-col gap-1" open>
+                <summary class="flex items-center justify-between w-full gap-4">
+                  <p class="text-base font-semibold cursor-pointer list-none">
+                    Ver descrição
+                  </p>
+                  <div class="flex justify-between items-center gap-1.5">
+                    <div class="flex gap-1.5 items-center justify-center text-xs">
+                      <img src="/star.svg" alt="TODO: ADD ALT" class="h-3" />
+                      <p><b>4,7</b>/5</p>
+                    </div>
+                    <p class="text-xs underline">
+                      89 avaliações
+                    </p>
+                    <img src="/chevron.svg" alt="TODO: ADD ALT" class="w-3" />
+                  </div>
+                </summary>
+                <div class="text-sm flex flex-col gap-2 border-neutral-300 border p-2 rounded-md">
+                  <p class=" font-semibold">
+                    Lindo
+                  </p>
+                  <div class="flex flex-col">
+                    <p class="line-clamp-3">
+                      O aparador é lindo, o material um pouco sensível. O móvel veio com duas pequenas moças: no tampo e
+                      uma
+                      numa das portas que considerei negligenciáveis (a primeira pelo o tamanho reduzido e a segunda por
+                      não
+                      estar numa zona visível). Estou a pensar em baixar a altura dos pés, pois é um pouco alto para
+                      colocar
+                      atrás do sofá
+                    </p>
+                    <p class="text-xs underline text-end">Ver todas as avaliações</p>
+                  </div>
+                </div>
+              </details>
+              <div class="text-sm flex items-center justify-start gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                <img src="/movel-01.webp" alt="TODO: ADD ALT" class="h-8 border-neutral-200 border rounded-sm" />
+                <p class="font-semibold text-gray-400">
+                  Pinho encerado
+                </p>
+              </div>
+              <div
+                class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                <p class="font-semibold text-gray-400">
+                  Tamanho
+                </p>
+                <p class="font-semibold uppercase text-gray-400">
+                  Tamanho Uníco
+                </p>
+              </div>
+              <div class="flex gap-2">
+                <button aria-label="Selectionar Quantidade"
+                  class="text-sm flex items-center justify-between gap-5 border-gray-200 border-2 h-12 px-2 rounded-md w-fit">
+                  <p class="font-semibold text-neutral-900 text-sm">
+                    1
+                  </p>
+                  <img src="/chevron.svg" alt="TODO: ADD ALT" class="w-3.5 rotate-90" />
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-0">
+              <div class="flex justify-start w-fit items-center gap-1.5">
+                <p class="text-sm"><strike>1215.00 €</strike></p>
+                <p class="text-sm">-11%</strike></p>
+              </div>
+              <p class="text-2xl">1081.35€</strike></p>
+
+              <div class="flex flex-col gap-6 xl:gap-8">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-col gap-1.5">
+                    <img src="/banner-free-shipping.webp" alt="TODO: ADD ALT" class="h-10 object-contain object-left" />
+                    <img src="/banner-gift-card.webp" alt="TODO: ADD ALT" class="h-16 object-contain object-left" />
+                    <p class="text-sm">Baixa de preço. Preço fevereiro 2023: 1489€</p>
+                  </div>
+                  <div class="flex w-full items-center justify-center">
+                    <button
+                      class="text-sm flex items-center justify-center bg-neutral-900 hover:bg-orange-500  h-12 px-2 rounded-md grow">
+                      <p class="font-semibold uppercase text-white">
+                        Juntar ao carrinho
+                      </p>
+                    </button>
+                    <button aria-label="Abrir Menu"
+                      class="flex relative items-center justify-center w-14 shrink-0 rounded-full h-14 gap-2">
+                      <img src="/favorite.svg" alt="logo" class="h-6 w-full" />
+                    </button>
+                  </div>
+                  <button class="text-sm flex items-center justify-start w-fit gap-2">
+                    <img src="/clock.svg" alt="TODO: ADD ALT" />
+                    <p class="font-semibold text-neutral-900 text-base">
+                      Disponível para envio até 9 dias úteis
+                    </p>
+                  </button>
+                </div>
+
+                <div class="flex flex-col gap-3 xl:gap-5">
+                  <div class="text-sm flex items-center justify-between gap-2 bg-zinc-100 py-4 px-4">
+                    <p class="text-neutral-900 uppercase text-base">
+                      30 Dias para trocar ou devolver
+                    </p>
+                  </div>
+
+                  <div class="flex flex-col xl:flex-row gap-2 xl:gap-5">
+                    <div class="text-sm w-full flex items-center justify-start gap-3 bg-zinc-100 py-5 px-4">
+                      <img src="/correct.svg" alt="TODO: ADD ALT" class="h-3" />
+                      <p class="text-neutral-900 uppercase text-base underline font-normal">
+                        Envio grátis
+                      </p>
+                    </div>
+                    <div class="text-sm w-full flex items-center justify-start gap-3 bg-zinc-100 py-5 px-4">
+                      <img src="/correct.svg" alt="TODO: ADD ALT" class="h-3" />
+                      <p class="text-neutral-900 uppercase text-base underline font-normal">
+                        Devolução grátis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Other Products-->
+  <section>
+    <div class="flex items-center justify-center w-full">
+      <div class="pt-4 pb-8 px-4 flex flex-col gap-8 w-full">
+        <p class="text-zinc-900 text-3xl font-semibold ">
+          Componho o meu conjunto
+        </p>
+        <div class="embla w-full related-products">
+          <div class="embla__container w-full">
+            <!-- Related Product-->
+            <div class="embla__slide w-full">
+              <div class="flex w-full text-zinc-900 flex-col gap-1">
+                <img src="/related-01.webp" alt="TODO: ADD ALT" class="object-contain object-top w-full" />
+                <p class="text-sm w-full line-clamp-1 text-rose-600 font-semibold">2 ofertas à escolha</p>
+                <h2 class=" text-sm font-semibold w-full line-clamp-1">LA REDOUTE INTERIEURS</h2>
+                <p class="text-sm w-full line-clamp-1">Mesa com extensões, Nottingham</p>
+                <div class="text-sm">-10%</div>
+                <div class="text-sm font-semibold w-full">854.78 €</div>
+                <div class="flex  flex-col gap-2 pb-2 pt-5">
+                  <div
+                    class="text-sm flex items-center justify-start gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <img src="/related-01.webp" alt="TODO: ADD ALT" class="h-8 border-neutral-200 border rounded-sm" />
+                    <p class="font-semibold text-gray-400">
+                      Pinho encerado
+                    </p>
+                  </div>
+                  <div
+                    class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <p class="font-semibold text-gray-400">
+                      Tamanho
+                    </p>
+                    <p class="font-semibold text-gray-400">
+                      10 pessoas
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="text-sm flex items-center justify-center bg-neutral-900 hover:bg-orange-500  h-12 px-2 rounded-md grow">
+                  <p class="font-semibold uppercase text-white">
+                    Juntar ao carrinho
+                  </p>
+                </button>
+
+              </div>
+            </div>
+            <!-- Related Product-->
+            <div class="embla__slide w-full">
+              <div class="flex w-full text-zinc-900 flex-col gap-1">
+                <img src="/related-02.webp" alt="TODO: ADD ALT" class="object-contain object-top w-full" />
+                <p class="text-sm w-full line-clamp-1 text-rose-600 font-semibold">2 ofertas à escolha</p>
+                <h2 class=" text-sm font-semibold w-full line-clamp-1">LA REDOUTE INTERIEURS</h2>
+                <p class="text-sm w-full line-clamp-1">Aparador 2 portas, NOTTINGHAM</p>
+                <div class="text-sm">-24%</div>
+                <div class="text-sm font-semibold w-full">683.24 €</div>
+                <div class="flex  flex-col gap-2 pb-2 pt-5">
+                  <div
+                    class="text-sm flex items-center justify-start gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <img src="/related-02.webp" alt="TODO: ADD ALT" class="h-8 border-neutral-200 border rounded-sm" />
+                    <p class="font-semibold text-gray-400">
+                      Pinho encerado
+                    </p>
+                  </div>
+                  <div
+                    class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <p class="font-semibold text-gray-400">
+                      Tamanho
+                    </p>
+                    <p class="font-semibold text-gray-400">
+                      Tamanho Uníco
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="text-sm flex items-center justify-center bg-neutral-900 hover:bg-orange-500  h-12 px-2 rounded-md grow">
+                  <p class="font-semibold uppercase text-white">
+                    Juntar ao carrinho
+                  </p>
+                </button>
+
+              </div>
+            </div>
+            <!-- Related Product-->
+            <div class="embla__slide w-full">
+              <div class="flex w-full text-zinc-900 flex-col gap-1">
+                <img src="/related-03.webp" alt="TODO: ADD ALT" class="object-contain object-top w-full" />
+                <p class="text-sm w-full line-clamp-1 text-rose-600 font-semibold">2 ofertas à escolha</p>
+                <h2 class=" text-sm font-semibold w-full line-clamp-1">LA REDOUTE INTERIEURS</h2>
+                <p class="text-sm w-full line-clamp-1">Mesa 6 pessoas, NOTTINGHAM</p>
+                <div class="text-sm">-13%</div>
+                <div class="text-sm font-semibold w-full">642.93 €</div>
+                <div class="flex  flex-col gap-2 pb-2 pt-5">
+                  <div
+                    class="text-sm flex items-center justify-start gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <img src="/related-03.webp" alt="TODO: ADD ALT" class="h-8 border-neutral-200 border rounded-sm" />
+                    <p class="font-semibold text-gray-400">
+                      Pinho encerado
+                    </p>
+                  </div>
+                  <div
+                    class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <p class="font-semibold text-gray-400">
+                      Tamanho
+                    </p>
+                    <p class="font-semibold text-gray-400">
+                      10 pessoas
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="text-sm flex items-center justify-center bg-neutral-900 hover:bg-orange-500  h-12 px-2 rounded-md grow">
+                  <p class="font-semibold uppercase text-white">
+                    Juntar ao carrinho
+                  </p>
+                </button>
+
+              </div>
+            </div>
+            <!-- Related Product-->
+            <div class="embla__slide w-full">
+              <div class="flex w-full text-zinc-900 flex-col gap-1">
+                <img src="/related-04.webp" alt="TODO: ADD ALT" class="object-contain object-top w-full" />
+                <p class="text-sm w-full line-clamp-1 text-rose-600 font-semibold">2 ofertas à escolha</p>
+                <h2 class=" text-sm font-semibold w-full line-clamp-1">LA REDOUTE INTERIEURS</h2>
+                <p class="text-sm w-full line-clamp-1">Mesa de centro, Nottingham</p>
+                <div class="text-sm">-16%</div>
+                <div class="text-sm font-semibold w-full">242.76 €</div>
+                <div class="flex  flex-col gap-2 pb-2 pt-5">
+                  <div
+                    class="text-sm flex items-center justify-start gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <img src="/related-04.webp" alt="TODO: ADD ALT" class="h-8 border-neutral-200 border rounded-sm" />
+                    <p class="font-semibold text-gray-400">
+                      Pinho encerado
+                    </p>
+                  </div>
+                  <div
+                    class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <p class="font-semibold text-gray-400">
+                      Tamanho
+                    </p>
+                    <p class="font-semibold text-gray-400">
+                      Tamanho Uníco
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="text-sm flex items-center justify-center bg-neutral-900 hover:bg-orange-500  h-12 px-2 rounded-md grow">
+                  <p class="font-semibold uppercase text-white">
+                    Juntar ao carrinho
+                  </p>
+                </button>
+              </div>
+            </div>
+            <!-- Related Product-->
+            <div class="embla__slide w-full">
+              <div class="flex w-full text-zinc-900 flex-col gap-1">
+                <img src="/related-05.webp" alt="TODO: ADD ALT" class="object-contain object-top w-full" />
+                <p class="text-sm w-full line-clamp-1 text-rose-600 font-semibold">2 ofertas à escolha</p>
+                <h2 class=" text-sm font-semibold w-full line-clamp-1">LA REDOUTE INTERIEURS</h2>
+                <p class="text-sm w-full line-clamp-1">Aparador 1 porta, 3 gavetas, NOTTINGHAM</p>
+                <div class="text-sm">-7%</div>
+                <div class="text-sm font-semibold w-full">711.45 €</div>
+                <div class="flex  flex-col gap-2 pb-2 pt-5">
+                  <div
+                    class="text-sm flex items-center justify-start gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <img src="/related-05.webp" alt="TODO: ADD ALT" class="h-8 border-neutral-200 border rounded-sm" />
+                    <p class="font-semibold text-gray-400">
+                      Pinho encerado
+                    </p>
+                  </div>
+                  <div
+                    class="text-sm flex items-center justify-between gap-2 border-gray-200 border-2 h-12 px-2 rounded-md">
+                    <p class="font-semibold text-gray-400">
+                      Tamanho
+                    </p>
+                    <p class="font-semibold text-gray-400">
+                      Tamanho Uníco
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  class="text-sm flex items-center justify-center bg-neutral-900 hover:bg-orange-500  h-12 px-2 rounded-md grow">
+                  <p class="font-semibold uppercase text-white">
+                    Juntar ao carrinho
+                  </p>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product Info-->
+  <section class="flex flex-col items-center px-6 xl:px-10 py-2 xl:py-8 border-neutral-200 border-b">
+    <div class="gap-5 flex xl:flex-row flex-col">
+      <div class="flex flex-col w-full xl:w-1/2">
+        <span class="flex flex-col w-full">
+          <div class="text-3xl font-semibold">Descrição do artigo</div>
+          <div class="text-sm font-medium mt-8">Aparador 3 portas, 3 gavetas, NOTTINGHAM
+            pinho encerado LA REDOUTE INTERIEURS</div>
+          <div class="text-sm leading-5 mt-2.5">REF <span class="font-semibold">1260184 /
+              GCJ904</span></div>
+          <div class="text-sm leading-5 mt-2.5">O aparador 3 portas, 3 gavetas, NOTTINGHAM. Uma
+            linha clássica e reconfortante em pinho maciço encerado, revisitado tipo acabamento em parquet espinhado.
+            Este aparador oferece um bom espaço de arrumação num estilo acolhedor.</div>
+          <div class="text-sm font-semibold mt-2.5">Descrição:</div>
+          <div class="text-sm mt-1.5">
+            <ul class="list-disc list-inside">
+              <li>3 portas que se abrem sobre 3 nichos grandes e um nicho pequeno, 2 prateleiras amovíveis e ajustáveis.
+              </li>
+              <li>Compartimento pré-montado.</li>
+              <li>Compartimento e prateleiras amovíveis e ajustáveis em MDF, revestimento em pinho.</li>
+              <li>Portas e gavetas em pinho maciço embutido tipo "parquet em espinhado".</li>
+              <li>Acabamento encerado.</li>
+              <li>Dobradiças das portas e corrediças das gavetas com sistema «soft-closing», fecho suave.</li>
+              <li>Pé em aço lacado preto mate, acabamento epóxi.</li>
+              <li>Puxadores em carvalho preto mate.</li>
+              <li>Patins em plástico.</li>
+            </ul>
+          </div>
+          <div class="text-sm font-semibold mt-2.5">Dimensões:</div>
+          <div class="text-sm mt-1.5">
+            <ul class="list-disc list-inside">
+              <li>Dimensões do aparador 3 portas, 3 gavetas, NOTTINGHAM:</li>
+              <li>Largura: 180 cm</li>
+              <li>Altura: 85 cm</li>
+              <li>Profundidade: 43,5 cm</li>
+              <li>Altura: 75 cm</li>
+              <li>Altura dos pés: 25 cm</li>
+            </ul>
+          </div>
+          <div class="text-sm mt-5">Entrega ao domicílio</div>
+          <div class="text-sm mt-1.5">Atenção! Verifique se as aberturas (portas, escadas,
+            elevadores) permitem a passagem das embalagens no ato da entrega.</div>
+        </span>
+      </div>
+      <div class="flex flex-col w-full xl:w-1/2">
+        <img src="/movel-02.webp" alt="TODO: ADD ALT"
+          class="object-cover object-center w-full xl:aspect-auto aspect-video" />
+      </div>
+    </div>
+  </section>
+  <script type="module" src="./script.js"></script>
+  <script type="module" src="./experience.js"></script>
+  </body>
+
+</html>
