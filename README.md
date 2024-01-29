@@ -1,15 +1,15 @@
 # Guide to running the App
 
-### 1. Check Node.js Installation
-Ensure that Node.js is installed on your machine. You can check the installed version using the following command:
+### 1. Verificar a Instalação do Node.js
+Certifique-se de que o Node.js está instalado na máquina. Pode verificar a versão instalada usando o seguinte comando:
 ```bash
 node -v
 ```
-### 2. Install Dependencies
+### 2. Instalar Dependências
 ```bash
 npm install
 ```
-### 3. Run Live Development Server
+### 3. Iniciar Servidor de Desenvolvimento ao Vivo
 ```bash
 npm run dev
 ```
