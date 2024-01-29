@@ -1,7 +1,11 @@
 # Guia para Executar a Aplicação
 
 ### 1. Verificar a Instalação do Node.js
-Certifique-se de que o Node.js está instalado na máquina. Pode verificar a versão instalada usando o seguinte comando:
+Certifique-se de que o Node.js está instalado na máquina. 
+
+[Instalação do Node.JS](https://nodejs.org/en/download/)
+
+Pode verificar a versão instalada usando o seguinte comando:
 ```bash
 node -v
 ```
